@@ -4,20 +4,30 @@
             "server": "http://localhost:8080/exist",
             "user": "admin",
             "password": "",
-            "root": "/db/apps/lediir-users"    
+            "root": "/db/apps/balbin-users"    
         }
     },
     "sync": {
         "server": "localhost",
+	"polling": false,
+        "interval": 500,
         "ignore": [
             ".existdb.json",
             ".git/**",
+            ".github/**",
+            ".devcontainer/**",
+            ".vs/**",
+            ".vscode/**",
+            "build.sh",
+            ".env",
+            "components/**",
             "node_modules/**",
             "bower_components/**",
             "build/**",
+            "webtest/**",
             "*.code-workspace",
             "*.properties",
-            "*.local*"
+            "local.*"
         ]
     }
 }
