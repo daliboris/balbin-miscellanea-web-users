@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><meta xmlns="http://exist-db.org/xquery/repo">
-    <description>Elektronické lexikální databáze indoíránských jazyků: uživatelé</description>
+    <description>Bohuslav Balbín, Miscellanea: uživatelé</description>
     <author>Boris Lehečka</author>
-    <website>https://eldi.soc.cas.cz/</website>
+    <website>https://balbin.nacr.cz</website>
     <status>beta</status>
-    <license>GNU-LGPL</license>
+    <license>GPLv3</license>
     <copyright>true</copyright>
     <type>library</type>
-    <target>lediir-users</target>
+    <target>balbin-users</target>
     <!-- <prepare>pre-install.xql</prepare> -->
     <finish>post-install.xql</finish><!-- used for creating additional users -->
     <!-- will be replaced by local.secrets.xsl during ANT build -->
@@ -14,13 +14,13 @@
     <changelog>
         <change version="0.1.0">
             <ul xmlns="http://www.w3.org/1999/xhtml">
-                <li>creates a users who belongs to the tei and guest group</li>
+                <li>creates users who belongs to the tei and guest group</li>
             </ul>
         </change>
         <change version="0.2.0">
             <ul xmlns="http://www.w3.org/1999/xhtml">
-                <li>script for crating groups</li>
-                <li>login for each individual user</li>
+                <li>creates groups</li>
+                <li>creates multiple users beloging to multiple groups</li>
             </ul>
         </change>
     </changelog>
